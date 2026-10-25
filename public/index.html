@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f2eb">
+  <meta name="description" content="Meet Boisterous — considered menswear, personalized by you. Shop coats, shirts and denim with custom names and text.">
+  <title>Boisterous — Wear Your Signature</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="announcement-bar">Complimentary shipping on orders over ₹15,000 <span>·</span> Made personal, made yours.</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Boisterous home">BOISTEROUS<span class="brand-dot">.</span><small>YOUR STYLE. YOUR SIGNATURE.</small></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop all</a><a href="#personalize">Make it yours</a><a href="#craft">Our approach</a><a href="#support">Support</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-text-button" id="accountButton" aria-label="Open account"><span class="user-icon">↗</span><span id="accountButtonText">Sign in</span></button>
+      <button class="cart-button" id="openCartButton" aria-label="Open shopping bag">Bag <span class="cart-count" id="cartCount">0</span></button>
+      <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav"><a href="#shop">Shop all</a><a href="#personalize">Make it yours</a><a href="#craft">Our approach</a><a href="#support">Support</a></div>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> MEN'S ESSENTIALS, REIMAGINED</p>
+        <h1>Made to wear.<br><em>Made to mean.</em></h1>
+        <p class="hero-description">Considered coats, everyday shirts and denim that feels like you. Add a name, a message, a small signature — make your clothes unmistakably yours.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#shop">Explore the collection <span>↗</span></a><a class="text-link" href="#personalize">Discover personalization <span>↗</span></a></div>
+        <div class="hero-trust"><div class="avatars"><span>✦</span><span>✳</span><span>✧</span></div><p><strong>Details that feel personal</strong><br><small>Designed for everyday confidence.</small></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1300&q=90" alt="Modern tailored menswear in a warm studio" fetchpriority="high"><div class="image-grain"></div></div>
+        <div class="hero-sticker"><span class="sticker-star">✳</span><span>THE ART OF<br>BEING YOU</span></div>
+        <div class="hero-caption"><span>01 / SIGNATURE COLLECTION</span><span>Designed with intention</span></div>
+      </div>
+      <div class="hero-side-note">CUSTOM MADE DETAILS <span>—</span> EST. FOR YOUR EVERYDAY</div>
+    </section>
+
+    <div class="ticker" aria-label="Brand message"><div class="ticker-track"><span>WEAR YOUR STORY</span><b>✳</b><span>DETAILS THAT MATTER</span><b>✳</b><span>MADE PERSONAL</span><b>✳</b><span>WEAR YOUR STORY</span><b>✳</b><span>DETAILS THAT MATTER</span><b>✳</b><span>MADE PERSONAL</span><b>✳</b></div></div>
+
+    <section class="shop-section section-shell" id="shop">
+      <div class="section-heading shop-heading"><div><p class="eyebrow">THE BOISTEROUS EDIT</p><h2>Good clothes.<br><em>Great details.</em></h2></div><p class="heading-note">A considered lineup of everyday icons and occasion-ready layers. Pick your piece, then make it your own.</p></div>
+      <div class="shop-toolbar"><div class="category-filters" id="categoryFilters" role="group" aria-label="Filter products"><button class="filter-button active" data-category="All">All pieces <span>06</span></button><button class="filter-button" data-category="Coats">Coats</button><button class="filter-button" data-category="Shirts">Shirts</button><button class="filter-button" data-category="Jeans">Jeans</button></div><span class="product-count" id="productCount">06 pieces</span></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"><div class="loading-products">Setting the style...</div></div>
+      <div class="center-action"><a class="text-link" href="#personalize">Every piece can be personalized <span>↗</span></a></div>
+    </section>
+
+    <section class="personalize-section" id="personalize">
+      <div class="personalize-image"><img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=1200&q=85" alt="A close-up of a neatly styled shirt" loading="lazy"><div class="image-label">YOUR PIECE, YOUR MARK</div></div>
+      <div class="personalize-copy"><p class="eyebrow">A LITTLE SOMETHING THAT'S YOURS</p><h2>Not just worn.<br><em>Personal.</em></h2><p>Put your name on it. Add a date, a word, or a phrase you carry with you. Thoughtful personalization turns a favourite into <em>your</em> favourite.</p>
+        <div class="personalize-steps"><div><span>01</span><div><strong>Choose your piece</strong><small>Coat, shirt or denim — start with what feels right.</small></div></div><div><span>02</span><div><strong>Add your words</strong><small>Enter a name or message and choose a placement.</small></div></div><div><span>03</span><div><strong>Make it yours</strong><small>Review your design and add it to your bag.</small></div></div></div>
+        <button class="button button-dark" id="startCustomizeButton">Start personalizing <span>↗</span></button>
+      </div>
+      <div class="personalize-stamp">MADE<br>FOR YOU<br><span>✳</span></div>
+    </section>
+
+    <section class="craft-section section-shell" id="craft">
+      <div class="craft-top"><p class="eyebrow">THE BOISTEROUS POINT OF VIEW</p><h2>Less noise.<br><em>More meaning.</em></h2><p>We believe personal style comes from the details you choose — not the noise around them.</p></div>
+      <div class="craft-grid"><article><span class="craft-number">01 / FORM</span><div class="craft-symbol">◒</div><h3>Considered shapes</h3><p>Wearable silhouettes and versatile pieces that work hard in your wardrobe.</p></article><article><span class="craft-number">02 / DETAIL</span><div class="craft-symbol">✳</div><h3>Your personal mark</h3><p>Add a name or a few words to make a familiar essential feel one of one.</p></article><article><span class="craft-number">03 / EVERYDAY</span><div class="craft-symbol">↗</div><h3>Made to be lived in</h3><p>Pieces for your actual life — from weekday plans to the things worth celebrating.</p></article></div>
+    </section>
+
+    <section class="support-section" id="support">
+      <div class="support-inner section-shell"><div class="support-copy"><p class="eyebrow">HERE WHEN YOU NEED US</p><h2>A real person<br><em>is in your corner.</em></h2><p>Questions about sizing, personalization or an order? Send us a note and our support team will get back to you.</p><div class="support-detail"><span class="support-icon">↗</span><div><strong>Customer care</strong><small>Order queries, product guidance and help with your design.</small></div></div><div class="support-detail"><span class="support-icon">✉</span><div><strong>Order updates by email</strong><small>We'll confirm your order and send status updates when email is configured.</small></div></div></div>
+        <form class="support-form" id="supportForm"><div class="form-heading"><span>01 — CUSTOMER CARE</span><span>WE'RE LISTENING</span></div><label for="supportName">Your name</label><input id="supportName" name="name" autocomplete="name" placeholder="What should we call you?" required minlength="2"><label for="supportEmail">Email address</label><input id="supportEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><label for="supportSubject">How can we help?</label><select id="supportSubject" name="subject" required><option value="">Choose a topic</option><option>Order status</option><option>Sizing & fit</option><option>Personalization question</option><option>Returns & exchanges</option><option>Something else</option></select><label for="supportMessage">Your message</label><textarea id="supportMessage" name="message" rows="4" placeholder="Tell us a little more..." required minlength="10"></textarea><button class="button button-dark button-full" type="submit">Send your message <span>↗</span></button><p class="form-note">Your message is submitted securely to the store server.</p></form>
+      </div>
+    </section>
+
+    <section class="newsletter section-shell"><div><p class="eyebrow">A NOTE FROM BOISTEROUS</p><h2>Good things, <em>occasionally.</em></h2></div><p>New pieces, styling notes, and little ideas for making your wardrobe feel more like you.</p><a class="button button-outline" href="#support">Stay in touch <span>↗</span></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="brand brand-light" href="#home">BOISTEROUS<span class="brand-dot">.</span><small>YOUR STYLE. YOUR SIGNATURE.</small></a><p>Personal style is in the details.<br>Make yours count.</p><div class="footer-links"><a href="#shop">Shop</a><a href="#personalize">Personalize</a><a href="#support">Help & support</a><button id="footerAccountButton">Your account</button></div></div><div class="footer-bottom"><span>© <span id="yearNow"></span> BOISTEROUS STUDIO</span><span>DESIGNED TO FEEL LIKE YOU <b>✳</b></span><span>DEMO STORE · CASH ON DELIVERY</span></div></footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-header"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag <span id="drawerItemCount">(0)</span></h2></div><button class="close-button" id="closeCartButton" aria-label="Close bag">×</button></div><div class="cart-items" id="cartItems"><div class="empty-state"><span>✳</span><h3>Your bag is taking a breather.</h3><p>Find a piece that feels like you.</p><button class="button button-dark" id="emptyShopButton">Explore the collection</button></div></div><div class="cart-summary" id="cartSummary"><div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><div class="summary-line"><span>Shipping</span><span id="cartShipping">Calculated at checkout</span></div><p>Complimentary shipping on orders over ₹15,000.</p><button class="button button-dark button-full" id="checkoutButton">Continue to checkout <span>↗</span></button><small>Secure checkout · Cash on Delivery</small></div></aside>
+
+  <dialog class="site-dialog customizer-dialog" id="customizerDialog"><div class="dialog-head"><div><p class="eyebrow">MAKE IT YOURS</p><h2>Personalize your piece</h2></div><button class="close-button" data-close="customizerDialog" aria-label="Close">×</button></div><div class="customizer-layout"><div class="customizer-preview" id="customizerPreview"><img id="customizerImage" src="" alt="Selected garment preview"><div class="preview-personalization" id="previewPersonalization"><span id="previewName">YOUR NAME</span><small id="previewText">YOUR WORDS HERE</small></div><span class="preview-note">DESIGN PREVIEW</span></div><form id="customizerForm" class="customizer-form"><p class="selected-product" id="selectedProductName">The Atelier Wool Coat</p><p class="customizer-price" id="selectedProductPrice">₹14,900</p><p class="customizer-description">Choose your fit and colour, then add a personal detail. This is a design preview; final placement may vary slightly.</p><label for="customizerSize">Size</label><select id="customizerSize" required></select><label for="customizerColor">Colour</label><select id="customizerColor" required></select><label for="customizerName">Name or initials <span class="optional-label">OPTIONAL</span></label><input id="customizerName" maxlength="24" placeholder="e.g. ARJUN"><label for="customizerText">A short message <span class="optional-label">OPTIONAL</span></label><input id="customizerText" maxlength="48" placeholder="e.g. Make it count"><label for="customizerPosition">Placement</label><select id="customizerPosition"><option value="left chest">Left chest</option><option value="right chest">Right chest</option><option value="sleeve">Sleeve</option><option value="inside label">Inside label</option></select><label for="customizerFont">Personalization style</label><select id="customizerFont"><option value="classic">Classic</option><option value="modern">Modern</option><option value="script">Signature</option></select><button class="button button-dark button-full" type="submit">Add personalized piece <span>↗</span></button><p class="form-note">Personalization is included in this starter demo.</p></form></div></dialog>
+
+  <dialog class="site-dialog auth-dialog" id="authDialog"><div class="dialog-head"><div><p class="eyebrow">WELCOME TO BOISTEROUS</p><h2 id="authTitle">Good to have you here.</h2></div><button class="close-button" data-close="authDialog" aria-label="Close">×</button></div><div class="auth-tabs"><button class="auth-tab active" data-auth-mode="login">Sign in</button><button class="auth-tab" data-auth-mode="register">Create account</button><button class="auth-tab" data-auth-mode="phone">Mobile OTP</button></div><div id="authFormArea"><form id="loginForm" class="stacked-form"><label for="loginEmail">Email address</label><input id="loginEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com"><label for="loginPassword">Password</label><input id="loginPassword" name="password" type="password" autocomplete="current-password" minlength="8" required placeholder="At least 8 characters"><button class="button button-dark button-full" type="submit">Sign in <span>↗</span></button></form></div><div class="auth-divider"><span>OR CONTINUE WITH</span></div><a class="google-button" href="/api/auth/google" id="googleLoginButton"><span class="google-g">G</span> Continue with Google</a><p class="dialog-footnote">Use the same email for your order updates. Google and SMS sign-in require setup by the store owner.</p></dialog>
+
+  <dialog class="site-dialog checkout-dialog" id="checkoutDialog"><div class="dialog-head"><div><p class="eyebrow">ALMOST YOURS</p><h2>Delivery details</h2></div><button class="close-button" data-close="checkoutDialog" aria-label="Close">×</button></div><form id="checkoutForm" class="stacked-form"><div class="checkout-note"><span>✳</span><p>Cash on Delivery is enabled for this starter store. Online UPI and card payments are not connected yet.</p></div><label for="checkoutName">Full name</label><input id="checkoutName" name="customerName" required minlength="2" autocomplete="name"><label for="checkoutEmail">Email for order updates</label><input id="checkoutEmail" name="customerEmail" type="email" autocomplete="email" placeholder="you@example.com"><label for="checkoutPhone">Mobile number</label><input id="checkoutPhone" name="phone" autocomplete="tel" placeholder="+91..." maxlength="32"><label for="checkoutAddress">Full delivery address</label><textarea id="checkoutAddress" name="address" rows="3" required minlength="10" placeholder="House / flat, street, area, city, state, PIN code"></textarea><div class="checkout-total"><span>Order total</span><strong id="checkoutTotal">₹0</strong></div><button class="button button-dark button-full" type="submit">Place order · Cash on Delivery <span>↗</span></button></form></dialog>
+
+  <dialog class="site-dialog account-dialog" id="accountDialog"><div class="dialog-head"><div><p class="eyebrow">YOUR BOISTEROUS</p><h2 id="accountHeading">Your account</h2></div><button class="close-button" data-close="accountDialog" aria-label="Close">×</button></div><div class="account-profile" id="accountProfile"></div><div class="account-order-list" id="accountOrders"><p class="muted">Your orders will appear here.</p></div><div class="admin-panel" id="adminPanel" hidden><div class="admin-panel-title"><h3>Store orders</h3><span>ADMIN</span></div><div id="adminOrdersList"></div></div><button class="button button-outline button-full" id="logoutButton">Sign out</button></dialog>
+
+  <div class="chat-widget" id="chatWidget"><button class="chat-launcher" id="chatLauncher" aria-expanded="false" aria-controls="chatPanel"><span class="chat-launch-icon">✳</span><span>Ask our AI Stylist</span><span class="chat-launch-arrow">↗</span></button><section class="chat-panel" id="chatPanel" aria-label="AI Stylist chat" hidden><div class="chat-panel-head"><div class="stylist-avatar">✳</div><div><strong>Your AI Stylist</strong><small>Here for your next look</small></div><button class="chat-close" id="chatClose" aria-label="Close chat">×</button></div><div class="chat-messages" id="chatMessages"><div class="chat-message bot-message">Hey there. Need help choosing a coat, building an outfit, or personalizing a piece? Tell me what you're looking for.</div></div><div class="chat-suggestions"><button data-chat-prompt="Suggest a smart-casual outfit">Smart casual</button><button data-chat-prompt="Help me choose a coat">Find a coat</button><button data-chat-prompt="How can I customize a shirt?">Personalize</button></div><form class="chat-input-row" id="chatForm"><input id="chatInput" autocomplete="off" maxlength="1200" placeholder="Ask me anything about style..." aria-label="Message your AI Stylist" required><button type="submit" aria-label="Send message">↑</button></form><p class="chat-mode-note" id="chatModeNote">AI replies are in demo mode until an API key is configured.</p></section></div>
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
